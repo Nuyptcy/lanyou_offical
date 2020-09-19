@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+      <title>瀾魚工坊</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/cupertino/jquery-ui.css">
+      <!-- jQuery CDN -->
+      <script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <!-- jQuery UI CDN -->
+      <script  src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
+      <style>
+      * {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+    
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+
+.wrap {
+  overflow: hidden;
+  background-image:url(img/lobster.jpeg);
+  background-position: bottom center;
+  background-size:130%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.col-half,
+.col-three-one,
+.col-quarter {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-half-center {
+  margin-left: 25%;
+}
+
+.col-three-one {
+  width: 33.33333%;
+}
+
+.col-three-one-center {
+  margin-left: 33.33333%;
+}
+
+.col-quarter {
+  width: 25%;
+}
+
+/*navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.navbar.navbar-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.lanyu {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-menu {
+  margin: 0;
+  list-style: none;
+}
+.nav-menu li {
+  float: left;
+}
+.nav-menu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.nav-menu a:hover, .nav-menu a:active, .nav-menu a:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-menu a.active {
+  box-shadow: 0 -2px 0 orange inset;
+}
+.nav-menu .nav-accent {
+  color: white;
+  background-color:  orange;
+}
+.nav-menu .nav-accent:hover, .nav-menu .nav-accent:active, .nav-menu .nav-accent:focus {
+  color: white;
+  background-color:  orange;
+}
+.nav-menu .nav-accent.active {
+  box-shadow: 0 -2px 0  orange inset;
+}
+
+.img-sm{
+
+}
+.section-rotate {
+  transform: rotate(-7deg);
+  margin-left: -80px;
+  margin-right: -80px;
+  padding: 35px 80px 35px 80px;
+}
+.section-rotate .section-rotate-fixed {
+  transform: rotate(7deg);
+}
+
+
+.header-wrap {
+  height: 600px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10%;
+  overflow: hidden;
+  transform: rotate(-3deg);
+}
+
+
+.header-text {
+  padding: 25px 35px;
+  background-color: #555;
+  background-image: linear-gradient(45deg, #333, #555);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.table-bordered{
+  border: #333;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.v-center {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.relative {
+  position: relative;
+}
+
+.float-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.circle-border {
+  border: transparent 2px solid;
+  border-radius: 100%;
+}
+
+.border-white {
+  border-color: white;
+}
+
+
+.bg-white {
+  background-color:rgba(250, 250, 250, 0.3);
+}
+
+
+.text-white {
+  color: white;
+  text-decoration: none;
+}
+
+.text-gray {
+  color: #555;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+.m-y-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gradient1 {
+  background-image: linear-gradient(45deg, #fcedda, yellow);
+}
+
+.animated {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateY(100px);
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#LanyuLOGO{
+  height: 70%;
+  width: 70%;
+}
+</style>
+    </head>
+    <body>
+      <div class="wrap">
+          <nav class="navbar navbar-default ">
+            <div class="container">
+              <a href="#" class="lanyu float-left">
+                瀾魚工坊
+              </a>
+              <ul class="nav-menu pull-right">
+                <li><a href="#fish" class="scrollTop" title="魚類">
+                  魚類
+                  </a>
+                </li>
+                <li><a href="#cook" class="scrollTop" title="調理類">
+                  調理類
+                  </a>
+                </li>
+                <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">
+                  蝦蟹類
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section class="header-wrap">
+            <div class="container h100 relative" id="header-ele">
+              <div class="header-text text-gray bg-gradient1">
+                <h1 class="">也有生食級的喔</h1>
+                <!-- <img class="img-sm" src="img/seafood.jpg"> -->
+              </div>
+            </div>
+          </section>         
+          <section id="fish" class="section bg-white section-rotate box-shadow">
+            <div class="section-rotate-fixed">
+              <div class="container p-y-3">
+              
+                <div class="row">
+                  <div class="col-three-one animated">
+                    <div class="text-center">
+                      <span class=""></span>
+                    </div>
+                    <h3 class="text-center" >
+                      魚類
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
+                  </div>
+                  <div class="col-three-one animated">
+                    <div class="text-center">
+                      <span class="fa fa-code fa-5x"></span>
+                    </div>
+                    <h3 class="text-center">
+                      調理類
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
+                  </div>
+                  <div class="col-three-one animated">
+                    <div class="text-center">
+                      <span class="fa fa-html5 fa-5x"></span>
+                    </div>
+                    <h3 class="text-center">
+                    蝦蟹類
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>     
+          <section id="" class="bg-gradient1 text-white section-rotate">
+            <!-- information -->
+            <div class="section-rotate-fixed">
+          <table class="table-bordered text-center">
+            <thead>
+              <tr class="table-info">
+                  <!-- 網頁內容需要列表，列出自己的 GitHub public repo
+                  列表內容至少要包括：title (標題)、description (專案描述)、url (專案網址)，其餘資訊自行決定 -->
+                <th scope="col">GitHub public repo</th>
+                <th scope="col">title</th>
+                <th scope="col">description</th>
+                <th scope="col">th4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LanYu_official</td>
+                <td>Lanyu</td>
+                <td>
+                  食用海鮮網站
+                </td>
+                <td>td4</td>
+              </tr>
+            </tbody>
+          </table>
+            
+            
+            <div class="container">
+              <!-- information -->
+              
+              </div>
+            </div>
+          </section>
+          <section id="cook" class="bg-gradient1 text-white section-rotate">
+              <div class="section-rotate-fixed">
+                <div class="container p-y-3">
+                  <h2 class="text-center">
+                  優惠套餐
+                  </h2>
+                </div>
+              </div>
+            </section>
+          <section id="" class="">
+              <div class="section-rotate-fixed">
+                <div class="container p-y-3">
+                  <h2 class="text-center">
+                  TEST
+                  </h2>
+                </div>
+              </div>
+          </section>
+          <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)">
+            <div class="section-rotate-fixed">
+              <div class="container">
+                <h2 class="text-center ">瀾魚</h2>
+                <div class="row">
+                  <div class="col-half  animated">
+                    <p>瀾：大波浪，瀾魚代表著在洶湧浪中跳躍的海魚，如同台灣人勇於在逆浪中搏鬥的精神</p>
+                    <p class="text-right">想為自己的家人選一尾好魚 ; 想為台灣食魚文化盡一份心力</p>
+                    <h5>一一瀾魚的初衷</h5>
+                  </div>
+                  <div class="col-half animated">
+                    <img src="img/logo.jpeg" id="LanyuLOGO" alt="LanyuLOGO" class="" />
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </section>
+            
+          <footer class="footer p-y-3 text-right">
+          
+          </footer>
+            
+      </div>
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+      var showSkill = false;
+      $('.scrollTop').click(function(e){
+        e.preventDefault();
+      var target 
+      $(this).attr('href');
+      var targetPos = $(target).offset().top;
+        $('body').animate({scrollTop: targetPos}, 1000);
+      });
+  
+      $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        console.log(scrollPos, windowHeight);
+        
+      $('.scrollTop').each(function(){
+        var target = $(this).attr('href'); 
+        var targetPos = $(target).offset().top;
+        var targetHeight = $(target).outerHeight();
+        if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos){
+          $('.scrollTop').removeClass('active')
+          $(this).addClass('active');
+        } else {
+          $(this).removeClass('active')
+        }
+      });
+      // progress bar
+      var skillTop = $('#cook').position().top;
+      // console.log('skillTop', skillTop);
+      if (skillTop <= (scrollPos + windowHeight / 2) && !showSkill) {
+        showSkill = true;
+        $('#cook').each(function(){
+          var thisValue = $(this).data('progress');
+          console.log('thisValue', thisValue);
+          $(this).css('width', thisValue + '%');
+        });
+      }
+      // animated
+      $('.animated').each(function(){
+      var thisPos = $(this).offset().top;
+          if((windowHeight + scrollPos) >= thisPos) {
+            $(this).addClass('fadeIn');
+          }
+        });
+          // bg scroll 
+      $('#shrimp').css('background-position-y', -(scrollPos / 2) + 'px')
+      $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
+      
+      });
+  });
+      </script>
+    </body>
+</html>
