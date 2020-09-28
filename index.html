@@ -272,6 +272,7 @@ max-width: 350px;
 </style>
     </head>
     <body>
+      
       <div class="wrap">
           <nav class="navbar navbar-default ">
             <div class="container">
@@ -394,6 +395,9 @@ max-width: 350px;
                           魚類
                         </h3>
                           <img class="img-sm" src="img/squid.jpeg">
+                          <div class="name">透抽</div>
+                          <div class="price">NT 300</div>
+                          
                           
                         
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
@@ -407,7 +411,7 @@ max-width: 350px;
                         </h3>
                         <img class="img-sm" src="img/squid.jpeg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
-                       
+                      
                       </div>
                       <div class="col-three-one animated">
                         <div class="text-center">
@@ -460,6 +464,10 @@ max-width: 350px;
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
                       </div>
                   </div>
+                  <form id="sentToServer">
+                      <input type="text" name="data"/>
+                      <input type="button"  value="Send" onClick="MySubmit()"/>
+                  </form>
                   
                 </div>
               </div>
@@ -501,6 +509,20 @@ max-width: 350px;
 
       <script type="text/javascript">
       $(document).ready(function(){
+        //ajax practice
+        var MySubmit = function(){          
+            var path="http://127.0.0.1:12345";
+            $.ajax({
+                url: path,
+                data: $('#sentToServer').serialize(),
+                type:"POST",
+                dataType:'text',
+                success: function(msg){
+                    alert(msg);
+                }
+            });
+        }
+        
       var showSkill = false;
       $('.scrollTop').click(function(e){
         e.preventDefault();
@@ -552,5 +574,5 @@ max-width: 350px;
       });
   });
       </script>
-    </body>
+          </body>
 </html>
