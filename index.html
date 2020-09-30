@@ -446,12 +446,27 @@ max-width: 350px;
                         </h3>
                         <img class="img-sm" src="img/squid.jpeg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aut dolorem in autem veniam, nisi repellendus amet a eum laboriosam veritatis doloremque consectetur.</p>
-                        <div id="myDiv"><h2>Show content of this </h2></div>
-                        
-                        
-                        <div id="description-section" class="attribute-container"><h3 class="additional-title"> Description</h3><div class="additional-content"> The flavor of Kvarøy Arctic salmon reflects the waters in which they are raised. These waters are Arctic cool and clear, with a deep-fjord current that keeps the water fresh and helps exercise the salmon, reducing fat levels and giving this beautiful fish a pristine, clean flavor, with a slight brininess of the sea.<br> No antibiotics, chemicals, or hormones.</div></div>
-                        
-                        <button id="b01" type="button">Change Content</button>
+                        <button class="shopcarAdd">
+                            加入購物車
+                        </button>
+                        <div class="mask"></div>
+                    
+                    <div class="tanchuang">
+                            <div class="close">
+                                <span class="close1">x</span>
+                            </div>
+                            <div class="add">
+                                <p>商品已加入購物車</p>
+                                <p>共有<span id="mun">0</span>件商品</p>
+                            </div>
+                            <div class="go">
+                                <button class="goOn">繼續選購</button>
+                                <a href="#">去購物車</a>
+                            </div>
+                    </div> 
+                    
+                
+
                       </div>
                       <div class="col-three-one animated">
                         <div class="text-center">
@@ -481,6 +496,12 @@ max-width: 350px;
                 </div>
               </div>
           </section>
+          <!-- form test -->
+            
+            
+            
+
+    
           <!-- <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)"> -->
               <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:#fcedda">
               
@@ -509,6 +530,33 @@ max-width: 350px;
 
       <script type="text/javascript">
       $(document).ready(function(){
+
+        $(".close1").click(function(){
+    $(".tanchuang").css("display","none");
+    $(".mask").css("display","none");
+});
+$(".goOn").click(function(){
+    $(".tanchuang").css("display","none");
+    $(".mask").css("display","none");
+});
+
+var nums = 0;
+var spans = $("#mun");
+$(".shopcarAdd").click(function(){
+    $(".mask").css("display","block");
+    $(".tanchuang").css("display","block");
+        nums = $("#mun").html();
+        nums++;
+        spans.html(nums);
+});
+
+$(".mask").click(function(){
+    $(".tanchuang").css("display","none");
+    $(".mask").css("display","none");
+});
+
+
+
         //ajax practice
         var MySubmit = function(){          
             var path="http://127.0.0.1:12345";
