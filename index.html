@@ -33,7 +33,7 @@ h3 {
 
 .wrap {
   overflow: hidden;
-  background-image:url(img/lobster.jpeg);
+  background-image:url();
   background-position: bottom center;
   background-size:130%;
   background-attachment: fixed;
@@ -251,7 +251,7 @@ max-width: 350px;
 }
 
 .bg-gradient1 {
-  background-image: linear-gradient(45deg, #fcedda, yellow);
+  background-image: linear-gradient(45deg, #faf8f6, #fcedda,);
 }
 
 .animated {
@@ -451,7 +451,7 @@ max-width: 350px;
                         </button>
                         <div class="mask"></div>
                     
-                    <div class="tanchuang">
+                    <div class="cart_alert">
                             <div class="close">
                                 <span class="close1">x</span>
                             </div>
@@ -463,7 +463,126 @@ max-width: 350px;
                                 <button class="goOn">繼續選購</button>
                                 <a href="#">去購物車</a>
                             </div>
-                    </div> 
+                    </div>
+                    
+                    <div id="shoppingWrap">
+                        <nav class="shopCircuit">
+                          <ol>
+                            <li><img src="img/squid.jpeg" title="選擇付款方式"></li>
+                            <li><img src="img/squid.jpeg" title="填寫訂購資料"></li>
+                            <li><img src="img/squid.jpeg" title="完成訂購"></li>
+                          </ol>
+                        </nav>
+                        <form name="CartForm" id="CartForm" method="post">
+                        <section class="shopCartList">
+                          <table class="shoppTab">
+                            <tbody><tr>
+                              <th class="w90">商品圖片</th>
+                              <th>商品名稱</th>
+                              <th class="w80">規格</th>
+                              <th class="w60">數量</th>
+                              <th class="w60">單價</th>
+                              <th class="w60">小計</th>
+                              <th class="w80">刪除</th>
+                            </tr>
+                              <tr>		
+                                <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		
+                                <td valign="middle"><a href="img/squid.jpeg"> -5KG極簡率性後鬆緊割破涼感牛仔褲</a>
+                                  <br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		
+                                  <td valign="middle">黑 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','15572',this)"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','15572')"><img src="img/squid.jpeg"></a></td>	</tr>	
+                                  <tr>		
+                                  <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		<td valign="middle"><a href="https://www.seoulmate.com.tw/product.php?id=4589"> -5KG極簡率性後鬆緊割破涼感牛仔褲</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','16057',this)"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a></td>	
+                                    <td></td>	
+                                    <td></td>	
+                                    <td>-210</td>	
+                                    <td>-210</td>	
+                                  <td></td>
+                              </tr>				
+                              
+                            <script>
+                              // 有哪些贈品型折扣活動訊息，需要顯示？
+                              var aShowGiftInfo = [];
+                            </script>
+                            <tr>
+                              <td colspan="5" > 商品金額總計</td>
+                              <td></td>
+                              <td>NT$ <span class="prodtotal">2097</span></td>
+                            </tr>
+                            <tr>
+                              <td colspan="5" 折扣小計</td>
+                              <td></td>
+                              <td>NT$ <span class="discount_amount">-210</span></td>
+                            </tr>
+                            
+                            <tr>
+                              <td colspan="5" ><!--( 差399元即可有免運費優惠 )-->     運費小計</td>
+                              <td></td>
+                              <td><span class="shipfee">0</span></td>
+                            </tr>
+                            <tr class="bono">
+                              <td colspan="5" class="bono f15 Red">應付金額總計</td>
+                              <td class="bono"></td>
+                              <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
+                            </tr>
+                          </tbody></table>
+                              </section>
+                        
+                        <section class="cart_list trade-in_select_list">
+                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i> 選擇優惠方式</h3>
+                          <table class="shoppTab">
+                                    <tbody>
+                          <tr>
+                              <td width="40" class="bgF3 largelabel"><label><input type="radio" name="use_coupon" id="use_coupon_select" value="select" onclick="SetCoupon(this)"></label></td>
+                              <td>使用優惠卷  
+                                <select name="use_coupon" id="use_coupon" class="ml5" disabled="" onchange="CheckCoupon()">
+                                  <option value="">選擇折價券</option>
+                                              </select>
+                                <span id="use_coupon_msg"></span>
+                                <!--<span class="distype2">此優惠卷扣款
+                                  <span class="Red">100</span>元 </span>-->
+                                <span class="CheckStatus"></span>
+                              </td>
+                            </tr>
+                          <tr>
+                              <td class="bgF3 largelabel"></td>
+                              <label>
+                                <input type="radio" name="use_coupon" id="use_coupon_number" value="number" onclick="SetCoupon(this)">
+                              </label>
+                              </td>
+                              <td>優惠折扣碼 <input type="text" size="12" name="use_coupon_no" id="use_coupon_no" class="ml5" value="" disabled="">
+                                <input type="button" value="確定使用" class="grayBtn ml5" id="use_coupon_no_btn" onclick="CheckCoupon()" disabled=""><!--此優惠卷扣款
+                                <span class="Red">100</span>元   -->
+                                <span id="use_coupon_no_msg"></span>
+                                <span class="CheckStatus"></span>
+                              </td>
+                          </tr>
+                          </tbody></table>
+                          <input type="hidden" name="coupon_decnum" id="coupon_decnum" value="">
+                        </section>
+                        
+                        <section class="cart_list step_pickup_select_list">
+                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇取貨方式
+                            - <span class="f13">地區</span>
+                            <select name="location" id="location" onchange="CheckLocation()">
+                              <option value="taiwan" selected="">臺灣/離島</option><option value="other">其他</option>					
+                            </select>
+                          </h3>
+                          <table class="shoppTab deliverySel">
+                            <tbody><tr class="delivery_kind_宅配通" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="宅配通" onclick="CheckPayment(this)" data-name="宅配通"></label></td>	<td width="150">宅配通</td>	<td><em>單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨付款"></label></td>	<td width="150">超商取貨付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨不付款"></label></td>	<td width="150">超商取貨不付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr>			</tbody></table>
+                        </section>
+                        
+                        <section class="cart_list step_pay_select_list" style="display: block;">
+                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
+                          <ul class="pay_select" id="PaymentSel">
+                            <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
+                          <input type="hidden" name="IC" id="IC" value="">
+                          <input type="hidden" name="payment" id="payment" value="">
+                          <input type="hidden" name="shipfee" id="shipfee" value="0">
+                          <input type="hidden" name="shipfree" id="shipfree" value="1">
+                          <!-- <input type="hidden" name="delivery_kind" id="delivery_kind" value=""> -->
+                        </section>
+                        </form>
+                      </div>
                     
                 
 
@@ -503,7 +622,7 @@ max-width: 350px;
 
     
           <!-- <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)"> -->
-              <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:#fcedda">
+              <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(200, 232, 243)">
               
             <div class="section-rotate-fixed">
               <div class="container">
@@ -532,11 +651,11 @@ max-width: 350px;
       $(document).ready(function(){
 
         $(".close1").click(function(){
-    $(".tanchuang").css("display","none");
+    $("cart_alert").css("display","none");
     $(".mask").css("display","none");
 });
 $(".goOn").click(function(){
-    $(".tanchuang").css("display","none");
+    $(".cart_alert").css("display","none");
     $(".mask").css("display","none");
 });
 
@@ -544,14 +663,14 @@ var nums = 0;
 var spans = $("#mun");
 $(".shopcarAdd").click(function(){
     $(".mask").css("display","block");
-    $(".tanchuang").css("display","block");
+    $(".cart_alert").css("display","block");
         nums = $("#mun").html();
         nums++;
         spans.html(nums);
 });
 
 $(".mask").click(function(){
-    $(".tanchuang").css("display","none");
+    $(".cart_alert").css("display","none");
     $(".mask").css("display","none");
 });
 
