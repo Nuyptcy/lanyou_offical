@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-    <head>
-      <title>瀾魚工坊</title>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/cupertino/jquery-ui.css">
-      <!-- jQuery CDN -->
-      <script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-      <!-- jQuery UI CDN -->
-      <script  src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
-      <style>
-      * {
-  box-sizing: border-box;
-}
+<head>
+  <title>瀾魚工坊</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/cupertino/jquery-ui.css">
+  <!-- jQuery CDN -->
+  <script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <!-- jQuery UI CDN -->
+  <script  src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
+  <style>
+  * {
+box-sizing: border-box;
+    }
 
 body, html {
   height: 100%;
@@ -159,7 +159,6 @@ max-width: 350px;
   transform: rotate(7deg);
 }
 
-
 .header-wrap {
   height: 600px;
   padding-left: 15%;
@@ -168,7 +167,6 @@ max-width: 350px;
   overflow: hidden;
   transform: rotate(-3deg);
 }
-
 
 .header-text {
   padding: 25px 35px;
@@ -182,7 +180,6 @@ max-width: 350px;
   z-index: 2;
   box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
 }
-
 
 .table-bordered{
   border: #333;
@@ -219,11 +216,14 @@ max-width: 350px;
   border-color: white;
 }
 
+.footer{
+        margin-bottom: 0;
+        background-color: yellow;
+    }
 
 .bg-white {
   background-color:rgba(250, 250, 250, 0.3);
 }
-
 
 .text-white {
   color: white;
@@ -238,13 +238,10 @@ max-width: 350px;
   text-align: right;
 }
 
-
-
 .m-y-2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 
 .text-center {
   text-align: center;
@@ -269,489 +266,565 @@ max-width: 350px;
   height: 30%;
   width: 30%;
 }
-</style>
-    </head>
-    <body>
-      
-      <div class="wrap">
-          <nav class="navbar navbar-default ">
-            <div class="container">
-              <a href="#" class="lanyu float-left">
-                瀾魚工坊
-              </a>
-              <ul class="nav-menu pull-right">
-                <li><a href="#fish" class="scrollTop" title="魚類">
-                  魚類
-                  </a>
-                </li>
-                <li><a href="#cook" class="scrollTop" title="調理類">
-                  調理類
-                  </a>
-                </li>
-                <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">
-                  蝦蟹類
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <section class="header-wrap">
-            <div class="container h100 relative" id="header-ele">
-              <div class="header-text text-gray bg-gradient1">
-                <h1 class="">^___^</h1>
-                <!-- <img class="img-sm" src="img/seafood.jpg"> -->
-              </div>
-            </div>
-          </section>         
-          <section id="fish" class="section bg-white section-rotate box-shadow">
-            <div class="section-rotate-fixed">
-              <div class="container p-y-3">
-              <!-- items introduce -->
-                <div class="row">
-                  <div class="col-three-one">
-                    <div class="text-center">
-                      <span class=""></span>
-                    </div>
-                    <h3 class="text-center" >
-                      魚類
-                    </h3>
-                    <img class="img-sm" src="img/squid.jpeg">
-                    <div class="name">透抽</div>
-                    <div class="price">NT 300</div>
-                  </div>
-                  <div class="col-three-one">
-                    <div class="text-center">
-                      <span class="fa fa-code fa-5x"></span>
-                    </div>
-                    <h3 class="text-center">
-                      調理類
-                    </h3>
-                    <img class="img-sm" src="img/squid.jpeg">
-                    <div class="name">透抽</div>
-                    <div class="price">NT 300</div>
-                  </div>
-                  <div class="col-three-one">
-                    <div class="text-center">
-                      <span class="fa fa-html5 fa-5x"></span>
-                    </div>
-                    <h3 class="text-center">
-                    蝦蟹類
-                    </h3>
-                    <img class="img-sm" src="img/squid.jpeg">
-                    <div class="name">透抽</div>
-                    <div class="price">NT 300</div>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-three-one">
-                      <div class="text-center">
-                        <span class=""></span>
-                      </div>
-                      <h3 class="text-center" >
-                        魚類
-                      </h3>
-                      <img class="img-sm" src="img/squid.jpeg">
-                      <div class="name">透抽</div>
-                      <div class="price">NT 300</div>
-                    </div>
-                    <div class="col-three-one">
-                      <div class="text-center">
-                        <span class="fa fa-code fa-5x"></span>
-                      </div>
-                      <h3 class="text-center">
-                        調理類
-                      </h3>
-                      <img class="img-sm" src="img/squid.jpeg">
-                      <div class="name">透抽</div>
-                      <div class="price">NT 300</div>
-                    </div>
-                    <div class="col-three-one ">
-                      <div class="text-center">
-                        <span class="fa fa-html5 fa-5x"></span>
-                      </div>
-                      <h3 class="text-center">
-                      蝦蟹類
-                      </h3>
-                      <img class="img-sm" src="img/squid.jpeg">
-                      <div class="name">透抽</div>
-                      <div class="price">NT 300</div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </section>     
-          <section id="" class="bg-gradient1 text-white section-rotate">
-            <!-- information -->
-            <div class="section-rotate-fixed">
-                <div class="row">
-                    <div class="col-three-one animated">
-                      <div class="text-center">
-                        <span class=""></span>
-                      </div>
-                      
-              </div>
-            </div>
-          </section>
-          <section id="cook" class="bg-gradient1 text-grey section-rotate">
-              <div class="section-rotate-fixed">
-                <div class="container p-y-3">
-                  <h2 class="text-center">
-                  
-                  </h2>
-                  <div class="row bkg-bk" > 
-                      <div class="bkg-green col-three-one">
-                        <div class="text-center">
-                          <span class=""></span>
-                        </div>
-                        <h3 class="text-center" >
-                          魚類
-                        </h3>
-                          <img class="img-sm" src="img/squid.jpeg">
-                          <div class="name">透抽</div>
-                          <div class="price">NT 300</div>
-                          
-                          
-                        
-                      </div>
-                      <div class="col-three-one">
-                        <div class="text-center">
-                          <span class="fa fa-code fa-5x"></span>
-                        </div>
-                        <h3 class="text-center">
-                          調理類
-                        </h3>
-                        <img class="img-sm" src="img/squid.jpeg">
-                        <div class="name">透抽</div>
-                          <div class="price">NT 300</div>
-                      
-                      </div>
-                      <div class="col-three-one">
-                        <div class="text-center">
-                          <span class="fa fa-html5 fa-5x"></span>
-                        </div>
-                        <h3 class="text-center">
-                        蝦蟹類
-                        </h3>
-                        <img class="img-sm" src="img/squid.jpeg">
-                        <div class="name">透抽</div>
-                          <div class="price">NT 300</div>
-                      </div>
-                  </div>
-                  <div class="row bkg-bk" > 
-                      <div class="bkg-green col-three-one">
-                        <div class="text-center">
-                          <span class=""></span>
-                        </div>
-                        <h3 class="text-center" >
-                          魚類
-                        </h3>
-                          <img class="img-sm" src="img/squid.jpeg">
-                          <div class="name">透抽</div>
-                          <div class="price">NT 400</div>
-                          
-                        
-                      </div>
-                      <div class="col-three-one">
-                        <div class="text-center">
-                          <span class="fa fa-code fa-5x"></span>
-                        </div>
-                        <h3 class="text-center">
-                          調理類
-                        </h3>
-                        <img class="img-sm" src="img/squid.jpeg">
-                        <div class="name">透抽</div>
-                          <div class="price">NT 100</div>
-                        <button class="shopcarAdd">
-                            加入購物車
-                        </button>
-                        <div class="mask"></div>
-                    
-                    <div class="cart_alert">
-                            <div class="close">
-                                <span class="close1">x</span>
-                            </div>
-                            <div class="add">
-                                <p>商品已加入購物車</p>
-                                <p>共有<span id="mun">0</span>件商品</p>
-                            </div>
-                            <div class="go">
-                                <button class="goOn">繼續選購</button>
-                                <a href="#">去購物車</a>
-                            </div>
-                    </div>
-                    
-                    <div id="shoppingWrap">
-                        <nav class="shopCircuit">
-                          <ol>
-                            <li><img src="img/squid.jpeg" title="選擇付款方式"></li>
-                            <li><img src="img/squid.jpeg" title="填寫訂購資料"></li>
-                            <li><img src="img/squid.jpeg" title="完成訂購"></li>
-                          </ol>
-                        </nav>
-                        <form name="CartForm" id="CartForm" method="post">
-                        <section class="shopCartList">
-                          <table class="shoppTab">
-                            <tbody><tr>
-                              <th class="w90">商品圖片</th>
-                              <th>商品名稱</th>
-                              <th class="w80">規格</th>
-                              <th class="w60">數量</th>
-                              <th class="w60">單價</th>
-                              <th class="w60">小計</th>
-                              <th class="w80">刪除</th>
-                            </tr>
-                              <tr>		
-                                <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		
-                                <td valign="middle"><a href="img/squid.jpeg"> 商品名稱1</a>
-                                  <br><span class="cart-sale">【任選3項9折】		</span></td>		
-                                  <td valign="middle">黑 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','15572',this)"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','15572')"><img src="img/squid.jpeg"></a></td>	</tr>	
-                                  <tr>		
-                                  <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		<td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','16057',this)"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a></td>	
-                                    <td></td>	
-                                    <td></td>	
-                                    <td>-210</td>	
-                                    <td>-210</td>	
-                                  <td></td>
-                              </tr>				
-                              
-                            <script>
-                              // 有哪些贈品型折扣活動訊息，需要顯示？
-                              var aShowGiftInfo = [];
-                            </script>
-                            <tr>
-                              <td colspan="5" > 商品金額總計</td>
-                              <td></td>
-                              <td>NT$ <span class="prodtotal">2097</span></td>
-                            </tr>
-                            <tr>
-                              <td colspan="5" 折扣小計></td>
-                              <td></td>
-                              <td>NT$ <span class="discount_amount">-210</span></td>
-                            </tr>
-                            
-                            <tr>
-                              <td colspan="5" >  運費小計</td>
-                              <td></td>
-                              <td><span class="shipfee">0</span></td>
-                            </tr>
-                            <tr class="bono">
-                              <td colspan="5" class="bono f15 Red">應付金額總計</td>
-                              <td class="bono"></td>
-                              <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
-                            </tr>
-                          </tbody></table>
-                              </section>
-                      <!-- 優惠方式section -->
-                        <!-- <section class="cart_list trade-in_select_list">
-                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i> 選擇優惠方式</h3>
-                          <table class="shoppTab">
-                                    <tbody>
-                          <tr>
-                              <td width="40" class="bgF3 largelabel"><label><input type="radio" name="use_coupon" id="use_coupon_select" value="select" onclick="SetCoupon(this)"></label></td>
-                              <td>使用優惠卷  
-                                <select name="use_coupon" id="use_coupon" class="ml5" disabled="" onchange="CheckCoupon()">
-                                  <option value="">選擇折價券</option>
-                                              </select>
-                                <span id="use_coupon_msg"></span>
-                          
-                                <span class="CheckStatus"></span>
-                              </td>
-                            </tr>
-                          <tr>
-                              <td class="bgF3 largelabel"></td>
-                              <label>
-                                <input type="radio" name="use_coupon" id="use_coupon_number" value="number" onclick="SetCoupon(this)">
-                              </label>
-                              </td>
-                              <td>優惠折扣碼 <input type="text" size="12" name="use_coupon_no" id="use_coupon_no" class="ml5" value="" disabled="">
-                                <input type="button" value="確定使用" class="grayBtn ml5" id="use_coupon_no_btn" onclick="CheckCoupon()" disabled="">
 
-                                <span id="use_coupon_no_msg"></span>
-                                <span class="CheckStatus"></span>
-                              </td>
-                          </tr>
-                          </tbody></table>
-                          <input type="hidden" name="coupon_decnum" id="coupon_decnum" value="">
-                        </section> -->
-                        
-                        <section class="cart_list step_pickup_select_list">
-                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇取貨方式
-                            - <span class="f13">地區</span>
-                            <select name="location" id="location" onchange="CheckLocation()">
-                              <option value="taiwan" selected="">臺灣/離島</option><option value="other">其他</option>					
-                            </select>
-                          </h3>
-                          <table class="shoppTab deliverySel">
-                            <tbody><tr class="delivery_kind_宅配通" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="宅配通" onclick="CheckPayment(this)" data-name="宅配通"></label></td>	<td width="150">宅配通</td>	<td><em>單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨付款"></label></td>	<td width="150">超商取貨付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨不付款"></label></td>	<td width="150">超商取貨不付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr>			</tbody></table>
-                        </section>
-                        
-                        <section class="cart_list step_pay_select_list" style="display: block;">
-                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
-                          <ul class="pay_select" id="PaymentSel">
-                            <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
-                          <input type="hidden" name="IC" id="IC" value="">
-                          <input type="hidden" name="payment" id="payment" value="">
-                          <input type="hidden" name="shipfee" id="shipfee" value="0">
-                          <input type="hidden" name="shipfree" id="shipfree" value="1">
-                        </section>
-                        </form>
-                    </div>
-                    
-                
 
-                      </div>
-                      <div class="col-three-one">
-                        <div class="text-center">
-                          <span class="fa fa-html5 fa-5x"></span>
-                        </div>
-                        <h3 class="text-center">
-                        蝦蟹類
-                        </h3>
-                        <img class="img-sm" src="img/squid.jpeg">
-                      </div>
-                  </div>
-                  <form id="sentToServer">
-                      <input type="text" name="data"/>
-                      <input type="button"  value="Send" onClick="MySubmit()"/>
-                  </form>
-                  
-                </div>
-              </div>
-            </section>
-          <section id="" class="">
-              <div class="section-rotate-fixed">
-                <div class="container p-y-3">
-                  <h2 class="text-center">
-                  TEST
-                  </h2>
-                </div>
-              </div>
-          </section>
-          <!-- form test -->
-            
-            
-            
-
-    
-          <!-- <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)"> -->
-              <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(200, 232, 243)">
-              
-            <div class="section-rotate-fixed">
-              <div class="container">
-                <h2 class="text-center ">瀾魚</h2>
-                <div class="row">
-                  <div class="col-half  animated">
-                    <p>瀾：大波浪，瀾魚代表著在洶湧浪中跳躍的海魚，如同台灣人勇於在逆浪中搏鬥的精神</p>
-                    <p class="text-right">想為自己的家人選一尾好魚 ; 想為台灣食魚文化盡一份心力</p>
-                    <h5>一一瀾魚的初衷</h5>
-                  </div>
-                  <div class="col-half animated">
-                    <img src="img/logo.jpeg" id="LanyuLOGO" alt="LanyuLOGO" class="" />
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </section>
-            
-          <footer class="footer p-y-3 text-right">
-          
-          </footer>
-            
+  </style>
+</head>
+<body> 
+<div class="wrap">
+<nav class="navbar navbar-default">
+<div class="container">
+  <a href="#" class="lanyu float-left">瀾魚工坊</a>
+<ul class="nav-menu pull-right">
+  <li><a href="#fish" class="scrollTop" title="魚類">登入</a>
+  </li>
+  <li><a href="#cook" class="scrollTop" title="調理類">註冊</a>
+  </li>
+  <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">
+  <div class="add">
+      <p>共有<span id="mun">0</span>件商品<br>NT$<span id="prodtotal">0</span></p>
+  </div>
+    </a>
+  </li>
+</ul>
+</div>
+</nav>
+<section class="header-wrap">
+  <div class="container h100 relative" id="header-ele">
+    <div class="header-text text-gray bg-gradient1">
+      <h1 class="">^___^</h1>
+      <!-- <img class="img-sm" src="img/seafood.jpg"> -->
+    </div>
+  </div>
+</section>         
+<section id="fish" class="section bg-white section-rotate box-shadow">
+  <div class="section-rotate-fixed">
+    <div class="container p-y-3">
+    <!-- items introduce -->
+      <div class="row">
+        <div class="col-three-one">
+          <div class="text-center">
+            <span class=""></span>
+          </div>
+          <h3 class="text-center" >
+            魚類
+          </h3>
+          <img class="img-sm" src="img/squid.jpeg">
+          <div class="name">透抽</div>
+          <div class="price">NT 300</div>
+          <button class="shopcarAdd">
+              +
+          </button>
+        </div>
+        <div class="col-three-one">
+          <div class="text-center">
+            <span class="fa fa-code fa-5x"></span>
+          </div>
+          <h3 class="text-center">
+            調理類
+          </h3>
+          <img class="img-sm" src="img/squid.jpeg">
+          <div class="name">透抽</div>
+          <div class="price">NT 300</div>
+          <button class="shopcarAdd">
+              +
+          </button>
+        </div>
+        <div class="col-three-one">
+          <div class="text-center">
+            <span class="fa fa-html5 fa-5x"></span>
+          </div>
+          <h3 class="text-center">
+          蝦蟹類
+          </h3>
+          <img class="img-sm" src="img/squid.jpeg">
+          <div class="name">透抽</div>
+          <div class="price">NT 300</div>
+          <button class="shopcarAdd">
+              +
+          </button>
+        </div>
       </div>
-
-      <script type="text/javascript">
-      $(document).ready(function(){
-
-        $(".close1").click(function(){
-    $("cart_alert").css("display","none");
-    $(".mask").css("display","none");
-});
-$(".goOn").click(function(){
-    $(".cart_alert").css("display","none");
-    $(".mask").css("display","none");
-});
-
-var nums = 0;
-var spans = $("#mun");
-$(".shopcarAdd").click(function(){
-    $(".mask").css("display","block");
-    $(".cart_alert").css("display","block");
-        nums = $("#mun").html();
-        nums++;
-        spans.html(nums);
-});
-
-$(".mask").click(function(){
-    $(".cart_alert").css("display","none");
-    $(".mask").css("display","none");
-});
-
-
-
-        //ajax practice
-        var MySubmit = function(){          
-            var path="http://127.0.0.1:12345";
-            $.ajax({
-                url: path,
-                data: $('#sentToServer').serialize(),
-                type:"POST",
-                dataType:'text',
-                success: function(msg){
-                    alert(msg);
-                }
-            });
-        }
+      <div class="row">
+          <div class="col-three-one">
+            <div class="text-center">
+              <span class=""></span>
+            </div>
+            <h3 class="text-center" >
+              魚類
+            </h3>
+            <img class="img-sm" src="img/squid.jpeg">
+            <div class="name">透抽</div>
+            <div class="price">NT 300</div>
+            <button class="shopcarAdd">
+                +
+            </button>
+          </div>
+          <div class="col-three-one">
+            <div class="text-center">
+              <span class="fa fa-code fa-5x"></span>
+            </div>
+            <h3 class="text-center">
+              調理類
+            </h3>
+            <img class="img-sm" src="img/squid.jpeg">
+            <div class="name">透抽</div>
+            <div class="price">NT 300</div>
+            <button class="shopcarAdd">
+                +
+            </button>
+          </div>
+          <div class="col-three-one ">
+            <div class="text-center">
+              <span class="fa fa-html5 fa-5x"></span>
+            </div>
+            <h3 class="text-center">
+            蝦蟹類
+            </h3>
+            <img class="img-sm" src="img/squid.jpeg">
+            <div class="name">透抽</div>
+            <div class="price">NT 300</div>
+            <button class="shopcarAdd">
+                +
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>     
+<section id="" class="bg-gradient1 text-white section-rotate">
+  <!-- information -->
+  <div class="section-rotate-fixed">
+      <div class="row">
+          <div class="col-three-one animated">
+            <div class="text-center">
+              <span class=""></span>
+            </div>
+            
+    </div>
+  </div>
+</section>
+<section id="cook" class="bg-gradient1 text-grey section-rotate">
+    <div class="section-rotate-fixed">
+      <div class="container p-y-3">
+        <h2 class="text-center">
         
-      var showSkill = false;
-      $('.scrollTop').click(function(e){
-        e.preventDefault();
-      var target 
-      $(this).attr('href');
-      // offset位移
-      var targetPos = $(target).offset().top;
-        $('body').animate({scrollTop: targetPos}, 1000);
-      });
-  
-      $(window).scroll(function(){
-        var scrollPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        console.log(scrollPos, windowHeight);
+        </h2>
+        <div class="row bkg-bk" > 
+            <div class="bkg-green col-three-one">
+              <div class="text-center">
+                <span class=""></span>
+              </div>
+              <h3 class="text-center" >
+                魚類
+              </h3>
+                <img class="img-sm" src="img/squid.jpeg">
+                <div class="name">透抽</div>
+                <div class="price">NT 300</div>
+                <button class="shopcarAdd">
+                    +
+                </button>
+                
+                
+              
+            </div>
+            <div class="col-three-one">
+              <div class="text-center">
+                <span class="fa fa-code fa-5x"></span>
+              </div>
+              <h3 class="text-center">
+                調理類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+                <div class="price">NT 300</div>
+                <button class="shopcarAdd">
+                    +
+                </button>
+            
+            </div>
+            <div class="col-three-one">
+              <div class="text-center">
+                <span class="fa fa-html5 fa-5x"></span>
+              </div>
+              <h3 class="text-center">
+              蝦蟹類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+              <div class="price">NT 300</div>
+              <button class="shopcarAdd">
+                  +
+              </button>
+            </div>
+        </div>
+        <div class="row bkg-bk" > 
+            <div class="bkg-green col-three-one">
+              <div class="text-center">
+                <span class=""></span>
+              </div>
+              <h3 class="text-center" >
+                魚類
+              </h3>
+                <img class="img-sm" src="img/squid.jpeg">
+                <div class="name">透抽</div>
+                <div class="price">NT 400</div>
+                <button class="shopcarAdd">
+                    +
+                </button>
+                
+              
+            </div>
+            <div class="col-three-one">
+              <div class="text-center">
+                <span class="fa fa-code fa-5x"></span>
+              </div>
+              <h3 class="text-center">
+                調理類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+                <div class="price">NT 100</div>
+              <button class="shopcarAdd">
+                  +
+              </button>
+              <div class="mask"></div>
+        <!-- 預計改成button -->
+          <div class="cart_alert">
+                  <div class="close">
+                      <span class="close1">x</span>
+                  </div>
+                  
+                  <div class="go">
+                      <button class="goOn">繼續選購</button>
+                      <a href="#">去購物車</a>
+                  </div>
+          </div>
+          
+          <div id="shoppingWrap">
+              <nav class="shopCircuit">
+                <ol>
+                  <li><img src="img/squid.jpeg" title="選擇付款方式"></li>
+                  <li><img src="img/squid.jpeg" title="填寫訂購資料"></li>
+                  <li><img src="img/squid.jpeg" title="完成訂購"></li>
+                </ol>
+              </nav>
+              <form name="CartForm" id="CartForm" method="post">
+              <section class="shopCartList">
+                <table class="shoppTab">
+                  <tbody><tr>
+                    <th class="w90">商品圖片</th>
+                    <th>商品名稱</th>
+                    <th class="w80">規格</th>
+                    <th class="w60">數量</th>
+                    <th class="w60">單價</th>
+                    <th class="w60">小計</th>
+                    <th class="w80">刪除</th>
+                  </tr>
+                    <tr>		
+                      <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		
+                      <td valign="middle"><a href="img/squid.jpeg"> 商品名稱1</a>
+                        <br><span class="cart-sale">【任選3項9折】		</span></td>		
+                        <td valign="middle">黑 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','15572',this)"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','15572')"><img src="img/squid.jpeg"></a></td>	</tr>	
+                        <tr>		
+                        <td><a class="thumbnailImg"><img src="img/squid.jpeg" class="galleryImg"></a></td>		<td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			<select name="qty[]" onchange="update_item('4589','16057',this)"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a></td>	
+                          <td></td>	
+                          <td></td>	
+                          <td>-210</td>	
+                          <td>-210</td>	
+                        <td></td>
+                    </tr>				
+                    
+                  <script>
+                    var aShowGiftInfo = [];
+                  </script>
+                  <tr>
+                    <td colspan="5" > 商品金額總計</td>
+                    <td></td>
+                    <td>NT$ <span class="prodtotal">2097</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" 折扣小計></td>
+                    <td></td>
+                    <td>NT$ <span class="discount_amount">-210</span></td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="5" >  運費小計</td>
+                    <td></td>
+                    <td><span class="shipfee">0</span></td>
+                  </tr>
+                  <tr class="bono">
+                    <td colspan="5" class="bono f15 Red">應付金額總計</td>
+                    <td class="bono"></td>
+                    <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
+                  </tr>
+                </tbody></table>
+                    </section>
+                    <section class="footer">  
+                          <div class="page_show"></div>               
+                        <slides class="sld" >
+                        </slides>
+                    </section>
+            <!-- 優惠方式section -->
+              <!-- <section class="cart_list trade-in_select_list">
+                <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i> 選擇優惠方式</h3>
+                <table class="shoppTab">
+                          <tbody>
+                <tr>
+                    <td width="40" class="bgF3 largelabel"><label><input type="radio" name="use_coupon" id="use_coupon_select" value="select" onclick="SetCoupon(this)"></label></td>
+                    <td>使用優惠卷  
+                      <select name="use_coupon" id="use_coupon" class="ml5" disabled="" onchange="CheckCoupon()">
+                        <option value="">選擇折價券</option>
+                                    </select>
+                      <span id="use_coupon_msg"></span>
+                
+                      <span class="CheckStatus"></span>
+                    </td>
+                  </tr>
+                <tr>
+                    <td class="bgF3 largelabel"></td>
+                    <label>
+                      <input type="radio" name="use_coupon" id="use_coupon_number" value="number" onclick="SetCoupon(this)">
+                    </label>
+                    </td>
+                    <td>優惠折扣碼 <input type="text" size="12" name="use_coupon_no" id="use_coupon_no" class="ml5" value="" disabled="">
+                      <input type="button" value="確定使用" class="grayBtn ml5" id="use_coupon_no_btn" onclick="CheckCoupon()" disabled="">
+
+                      <span id="use_coupon_no_msg"></span>
+                      <span class="CheckStatus"></span>
+                    </td>
+                </tr>
+                </tbody></table>
+                <input type="hidden" name="coupon_decnum" id="coupon_decnum" value="">
+              </section> -->
+              
+              <!-- <section class="cart_list step_pickup_select_list">
+                <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇取貨方式
+                  - <span class="f13">地區</span>
+                  <select name="location" id="location" onchange="CheckLocation()">
+                    <option value="taiwan" selected="">臺灣/離島</option><option value="other">其他</option>					
+                  </select>
+                </h3>
+                <table class="shoppTab deliverySel">
+                  <tbody><tr class="delivery_kind_宅配通" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="宅配通" onclick="CheckPayment(this)" data-name="宅配通"></label></td>	<td width="150">宅配通</td>	<td><em>單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨付款"></label></td>	<td width="150">超商取貨付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr><tr class="delivery_kind_logistics" style="display: table-row;">	<td width="40" class="bgF3 largelabel" align="center"><label><input type="radio" name="delivery_kind" id="delivery_kind_0" class="delivery_kind" value="logistics" onclick="CheckPayment(this)" data-name="超商取貨不付款"></label></td>	<td width="150">超商取貨不付款</td>	<td><em>全家、統一超商，單筆未滿$1酌收85元運費</em></td></tr>			</tbody></table>
+              </section> -->
+              
+              <section class="cart_list step_pay_select_list" style="display: block;">
+                <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
+                <ul class="pay_select" id="PaymentSel">
+                  <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
+                <input type="hidden" name="IC" id="IC" value="">
+                <input type="hidden" name="payment" id="payment" value="">
+                <input type="hidden" name="shipfee" id="shipfee" value="0">
+                <input type="hidden" name="shipfree" id="shipfree" value="1">
+              </section>
+              </form>
+          </div>
+          
+            </div>
+            <div class="col-three-one">
+              <div class="text-center">
+                <span class="fa fa-html5 fa-5x"></span>
+              </div>
+              <h3 class="text-center">
+              蝦蟹類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+              <div class="price">NT 300</div>
+              <button class="shopcarAdd">
+                  +
+              </button>
+            </div>
+        </div>
+        <form id="sentToServer">
+            <input type="text" name="data"/>
+            <input type="button"  value="Send" onClick="MySubmit()"/>
+        </form>
         
-      $('.scrollTop').each(function(){
-        var target = $(this).attr('href'); 
-        var targetPos = $(target).offset().top;
-        var targetHeight = $(target).outerHeight();
-        if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos){
-          $('.scrollTop').removeClass('active')
-          $(this).addClass('active');
-        } else {
-          $(this).removeClass('active')
-        }
+      </div>
+    </div>
+  </section>
+<section id="" class="">
+    <div class="section-rotate-fixed">
+      <div class="container p-y-3">
+        <h2 class="text-center">
+        TEST
+        </h2>
+      </div>
+    </div>
+</section>
+<!-- form test -->
+  <!-- <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)"> -->
+<section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(227, 241, 245)">  
+  <div class="section-rotate-fixed">
+    <div class="container">
+      <h2 class="text-center ">瀾魚</h2>
+      <div class="row">
+        <div class="col-half  animated">
+          <p>瀾：大波浪，瀾魚代表著在洶湧浪中跳躍的海魚，如同台灣人勇於在逆浪中搏鬥的精神</p>
+          <p class="text-right">想為自己的家人選一尾好魚 ; 想為台灣食魚文化盡一份心力</p>
+          <h5>一一瀾魚的初衷</h5>
+        </div>
+        <div class="col-half animated">
+          <img src="img/logo.jpeg" id="LanyuLOGO" alt="LanyuLOGO" class="" />
+        </div>
+      </div>
+    </div> 
+  </div>
+</section> 
+
+
+</div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    //輸出頁碼
+	function setPage(pageCount){
+		var pageHtml = '';
+    var start;
+    var end;
+		if(listPage < 6){
+			start = 1;
+		}else{
+			start = listPage - 5;
+		}
+		if(listPage > pageCount - 5){
+			end = pageCount;
+		}else{
+			end = listPage + 5;
+		}
+		
+		if(listPage > 1){
+			pageHtml += '<span>上一頁</span>';
+		}
+		for(var i = start , page_cur = '' ; i <= end ; i++){
+			if(listPage == i){
+				page_cur = 'page_cur';
+			}else{
+				page_cur = '';
+			}
+			pageHtml += '<span class="' + page_cur + '">' + i + '</span>';
+		}
+		if(listPage < pageCount){
+			pageHtml += '<span>下一頁</span>';
+		}
+		$('.page_show').empty().append(pageHtml);
+	}
+    //切換頁面
+	$('body').on('click','.page_show span',function(){
+		var $this = $(this);
+		if($this.hasClass('page_cur')){
+			return;
+		}
+		var page = $this.html();
+		if(page == '上一頁'){
+			listPage = listPage - 1;
+		}else if(page == '下一頁'){
+			listPage = listPage + 1;
+		}else{
+			listPage = parseInt(page);
+		}
+		//根據頁碼獲取當前頁列表數據
+		getData();
+	});
+	
+	var listPage = 1;
+	getData();
+	function getData(){
+		setPage(8);
+	}
+              $(".close1").click(function(){
+          $("cart_alert").css("display","none");
+          $(".mask").css("display","none");
       });
-      // progress bar
-      var skillTop = $('#cook').position().top;
-      // console.log('skillTop', skillTop);
-      if (skillTop <= (scrollPos + windowHeight / 2) && !showSkill) {
-        showSkill = true;
-        $('#cook').each(function(){
-          var thisValue = $(this).data('progress');
-          console.log('thisValue', thisValue);
-          $(this).css('width', thisValue + '%');
-        });
-      }
-      // animated
-      $('.animated').each(function(){
-      var thisPos = $(this).offset().top;
-          if((windowHeight + scrollPos) >= thisPos) {
-            $(this).addClass('fadeIn');
-          }
-        });
-          // bg scroll 
-      $('#shrimp').css('background-position-y', -(scrollPos / 2) + 'px')
-      $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
-      
+      $(".goOn").click(function(){
+          $(".cart_alert").css("display","none");
+          $(".mask").css("display","none");
       });
+
+      var nums = 0;
+      var spans = $("#mun");
+      $(".shopcarAdd").click(function(){
+          $(".mask").css("display","block");
+          $(".cart_alert").css("display","block");
+              nums = $("#mun").html();
+              nums++;
+              spans.html(nums);
+      });
+
+      $(".mask").click(function(){
+          $(".cart_alert").css("display","none");
+          $(".mask").css("display","none");
+      });
+
+
+
+    //ajax practice
+    var MySubmit = function(){          
+        var path="http://127.0.0.1:12345";
+        $.ajax({
+            url: path,
+            data: $('#sentToServer').serialize(),
+            type:"POST",
+            dataType:'text',
+            success: function(msg){
+                alert(msg);
+            }
+        });
+    }
+    
+  var showSkill = false;
+  $('.scrollTop').click(function(e){
+    e.preventDefault();
+  var target 
+  $(this).attr('href');
+  // offset位移
+  var targetPos = $(target).offset().top;
+    $('body').animate({scrollTop: targetPos}, 1000);
   });
-      </script>
-          </body>
+
+  $(window).scroll(function(){
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    console.log(scrollPos, windowHeight);
+    
+  $('.scrollTop').each(function(){
+    var target = $(this).attr('href'); 
+    var targetPos = $(target).offset().top;
+    var targetHeight = $(target).outerHeight();
+    if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos){
+      $('.scrollTop').removeClass('active')
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active')
+    }
+  });
+  // progress bar
+  var skillTop = $('#cook').position().top;
+  // console.log('skillTop', skillTop);
+  if (skillTop <= (scrollPos + windowHeight / 2) && !showSkill) {
+    showSkill = true;
+    $('#cook').each(function(){
+      var thisValue = $(this).data('progress');
+      console.log('thisValue', thisValue);
+      $(this).css('width', thisValue + '%');
+    });
+  }
+  // animated
+  $('.animated').each(function(){
+  var thisPos = $(this).offset().top;
+      if((windowHeight + scrollPos) >= thisPos) {
+        $(this).addClass('fadeIn');
+      }
+    });
+      // bg scroll 
+  $('#shrimp').css('background-position-y', -(scrollPos / 2) + 'px')
+  $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
+  
+  });
+});
+  </script>
+</body>
 </html>
