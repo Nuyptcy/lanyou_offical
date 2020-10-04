@@ -300,9 +300,9 @@ max-width: 350px;
     <div class="container">
       <a href="#" class="lanyu float-left">瀾魚工坊</a>
     <ul class="nav-menu pull-right">
-      <li><a href="#fish" class="scrollTop" title="魚類">魚類</a></li>
-      <li><a href="#cook" class="scrollTop" title="調理類">調理類</a></li>
-      <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">蝦蟹類</a></li>
+      <li><a href="#fish" class="scrollTop" title="魚類">登入</a></li>
+      <li><a href="#cook" class="scrollTop" title="調理類">註冊</a></li>
+      <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">購物車數目</a></li>
     </ul>
       </div>
   </nav>
@@ -542,7 +542,6 @@ max-width: 350px;
                           <tr>
                               <th class="w90">商品圖片</th>
                               <th>商品名稱</th>
-                              <th class="w80">規格</th>
                               <th class="w60">數量</th>
                               <th class="w60">單價</th>
                               <th class="w60">小計</th>
@@ -553,23 +552,33 @@ max-width: 350px;
                           <tr>		
                             <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="gallery img-sm"></a></td>		
                             <td valign="middle"><a href="img/logo.jpeg" class="img-sm"> 商品名稱1</a>
-                              <br><span class="cart-sale">【任選3項9折】		</span></td>		
-                              <td valign="middle">黑 / L</td>		<td>			
-                                <select name="qty[]" onchange="">
-                                  <option value="1" selected="">1</option><option value="2">2</option>
-                                  <option value="3">3</option><option value="4">4</option><option value="5">5</option>
-                                  <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                                  <option value="10">10</option>
-                                </select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>
-                                    <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </a></td>	</tr>	
+                              <br><span class="cart-sale">【滿千送贈品】		</span>
+                            </td>		
+                         
+                            <td>			
+                              <select name="qty[]" onchange="">
+                                <option value="1" selected="">1</option><option value="2">2</option>
+                                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                                <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>	
+                            </td>		
+                            <td>699</td>		
+                            <td><span class="subtotal">699</span></td>
+                            <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
+                                <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                            </a></td>	
+                          </tr>	
 
                                       
                               <tr>		
                               <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="galleryImg img-sm"></a></td>		
-                              <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			
-                                <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a>
+                              <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【滿千送贈品】		</span></td>				<td>			
+                                <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td>
+                                  <a href="javascript:void(0)" onclick="del_item('4589','16057')">
+                                      <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a></td>
+                                </tr><tr>	<td><span class="tag_v1">滿千送贈品</span></td>	
+                                  <td><a class="Red" href="sale_activity.php?id=74"></a>
                               </td>	
                                 <td></td>	
                                 <td></td>	
@@ -645,7 +654,7 @@ max-width: 350px;
     <div class="section-rotate-fixed">
       <div class="container p-y-3">
         <h2 class="text-center">
-        TEST
+        <!-- TEST -->
         </h2>
       </div>
     </div>
