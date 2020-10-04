@@ -296,115 +296,56 @@ max-width: 350px;
 	<li><a href="#">&raquo;</a></li>
 </ul>
 <div class="wrap">
-    <nav class="navbar navbar-default ">
-        <div class="container">
-          <a href="#" class="lanyu float-left">
-            瀾魚工坊
-          </a>
-          <ul class="nav-menu pull-right">
-            <li><a href="#fish" class="scrollTop" title="魚類">
-              魚類
-              </a>
-            </li>
-            <li><a href="#cook" class="scrollTop" title="調理類">
-              調理類
-              </a>
-            </li>
-            <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">
-              蝦蟹類
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-</div>
-    
-
-<div class="cart_alert">
-  <p>cart_alert</p>
-    <div class="close">
-        <span class="close1">x</span>
-    </div>
-    
-    <div class="go">
-        <button class="goOn">繼續選購</button>
-        <a href="#">去購物車</a>
-    </div>
-</div>
-
-<section class="header-wrap">
-  <div class="container h100 relative" id="header-ele">
-    <div class="header-text text-gray bg-gradient1">
-      <h1 class="">滾動視差</h1>
-      <!-- <img class="img-sm" src="img/seafood.jpg"> -->
-    </div>
-  </div>
-</section>         
-<section id="fish" class="section bg-white section-rotate box-shadow">
-  <div class="section-rotate-fixed">
-    <div class="container p-y-3">
-    <!-- items introduce -->
-      <div class="row">
-        <div class="col-three-one">
-          <div class="text-center">
-            <span class="fa fa-gift fa-5x"></span>
-          </div>
-          <h3 class="text-center" >
-            魚類
-          </h3>
-          <img class="img-sm" src="img/squid.jpeg">
-          <div class="name">透抽</div>
-          <div class="price">NT 300</div>
-          <i class="fa fa-plus" class="s1" onclick="s11();" aria-hidden="true"></i>
-        </div>
-        <div class="col-three-one">
-          <div class="text-center">
-            <span class="fa fa-truck fa-5x"></span>
-          </div>
-          <h3 class="text-center">
-            調理類
-          </h3>
-          <img class="img-sm" src="img/squid.jpeg">
-          <div class="name">透抽</div>
-          <div class="price">NT 300</div>
-          <button class="shopcarAdd">
-              +
-          </button>
-        </div>
-        <div class="col-three-one">
-          <div class="text-center">
-            <span class="fa fa-cutlery fa-5x"></span>
-          </div>
-          <h3 class="text-center">
-          蝦蟹類
-          </h3>
-          <img class="img-sm" src="img/squid.jpeg">
-          <div class="name">透抽</div>
-          <div class="price">NT 300</div>
-          <button class="shopcarAdd">
-              +
-          </button>
-        </div>
+  <nav class="navbar navbar-default ">
+    <div class="container">
+      <a href="#" class="lanyu float-left">瀾魚工坊</a>
+    <ul class="nav-menu pull-right">
+      <li><a href="#fish" class="scrollTop" title="魚類">魚類</a></li>
+      <li><a href="#cook" class="scrollTop" title="調理類">調理類</a></li>
+      <li><a href="#shrimp" class="scrollTop" title="蝦蟹類">蝦蟹類</a></li>
+    </ul>
       </div>
-      <div class="row">
+  </nav>
+</div>
+<!-- <div class="cart_alert">
+  <div class="close">
+    <span class="close1">x</span>
+  </div>
+  <div class="go">
+    <button class="goOn">繼續選購</button>
+    <a href="#">去購物車</a>
+  </div>
+</div> -->
+
+  <section class="header-wrap">
+    <div class="container h100 relative" id="header-ele">
+      <div class="header-text text-gray bg-gradient1">
+        <h1 class="">滾動視差</h1>
+        <!-- <img class="img-sm" src="img/seafood.jpg"> -->
+      </div>
+    </div>
+  </section>         
+  <section id="fish" class="section bg-white section-rotate box-shadow">
+    <div class="section-rotate-fixed">
+      <div class="container p-y-3">
+      <!-- items introduce -->
+        <div class="row">
           <div class="col-three-one">
-              <div class="text-center">
-                <span class="fa fa-gift fa-5x"></span>
-              </div>
+            <div class="text-center">
+              <span class="fa fa-gift fa-5x"></span>
+            </div>
             <h3 class="text-center" >
               魚類
             </h3>
-            
             <img class="img-sm" src="img/squid.jpeg">
             <div class="name">透抽</div>
             <div class="price">NT 300</div>
-            <button class="shopcarAdd">
-                +
-            </button>
+            <a class="addbtn"><i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i></a>
+            
           </div>
           <div class="col-three-one">
             <div class="text-center">
-              <span class="fa fa-snowflake-o fa-5x"></span>
+              <span class="fa fa-truck fa-5x"></span>
             </div>
             <h3 class="text-center">
               調理類
@@ -412,13 +353,13 @@ max-width: 350px;
             <img class="img-sm" src="img/squid.jpeg">
             <div class="name">透抽</div>
             <div class="price">NT 300</div>
-            <button class="shopcarAdd">
-                +
-            </button>
+            <a class="addbtn shopcarAdd">
+              <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="col-three-one ">
+          <div class="col-three-one">
             <div class="text-center">
-                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+              <span class="fa fa-cutlery fa-5x"></span>
             </div>
             <h3 class="text-center">
             蝦蟹類
@@ -426,27 +367,75 @@ max-width: 350px;
             <img class="img-sm" src="img/squid.jpeg">
             <div class="name">透抽</div>
             <div class="price">NT 300</div>
-            <button class="shopcarAdd">
+            <!-- <button class="shopcarAdd">
                 +
-            </button>
+            </button> -->
+            <a class="addbtn">
+                <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+              </a>
           </div>
         </div>
-    </div>
-  </div>
-</section>     
-<section id="" class="bg-gradient1 text-white section-rotate">
-  <!-- information -->
-  <div class="section-rotate-fixed">
-      <div class="row">
-          <div class="col-three-one animated">
-            <div class="text-center">
-              <span class=""></span>
+        <div class="row">
+            <div class="col-three-one">
+                <div class="text-center">
+                  <span class="fa fa-gift fa-5x"></span>
+                </div>
+              <h3 class="text-center" >
+                魚類
+              </h3>
+              
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+              <div class="price">NT 300</div>
+              <a class="addbtn">
+                  <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                </a>
             </div>
-            
+            <div class="col-three-one">
+              <div class="text-center">
+                <span class="fa fa-snowflake-o fa-5x"></span>
+              </div>
+              <h3 class="text-center">
+                調理類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+              <div class="price">NT 300</div>
+              <a class="addbtn">
+                  <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-three-one ">
+              <div class="text-center">
+                  <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-center">
+              蝦蟹類
+              </h3>
+              <img class="img-sm" src="img/squid.jpeg">
+              <div class="name">透抽</div>
+              <div class="price">NT 300</div>
+              <a class="addbtn">
+                  <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                </a>
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
-<section id="cook" class="bg-gradient1 text-grey section-rotate">
+  </section>     
+  <section id="" class="bg-gradient1 text-white section-rotate">
+    <!-- information -->
+    <div class="section-rotate-fixed">
+        <div class="row">
+            <div class="col-three-one animated">
+              <div class="text-center">
+                <span class=""></span>
+              </div>
+              
+      </div>
+    </div>
+  </section>
+  <section id="cook" class="bg-gradient1 text-grey section-rotate">
     <div class="section-rotate-fixed">
       <div class="container p-y-3">
         <h2 class="text-center">
@@ -463,12 +452,9 @@ max-width: 350px;
                 <img class="img-sm" src="img/squid.jpeg">
                 <div class="name">透抽</div>
                 <div class="price">NT 300</div>
-                <button class="shopcarAdd">
-                    +
-                </button>
-                
-                
-              
+                <a class="addbtn">
+                    <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                  </a>
             </div>
             <div class="col-three-one">
               <div class="text-center">
@@ -480,10 +466,9 @@ max-width: 350px;
               <img class="img-sm" src="img/squid.jpeg">
               <div class="name">透抽</div>
                 <div class="price">NT 300</div>
-                <button class="shopcarAdd">
-                    +
-                </button>
-            
+                <a class="addbtn">
+                    <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                  </a>
             </div>
             <div class="col-three-one">
               <div class="text-center">
@@ -495,9 +480,9 @@ max-width: 350px;
               <img class="img-sm" src="img/squid.jpeg">
               <div class="name">透抽</div>
               <div class="price">NT 300</div>
-              <button class="shopcarAdd">
-                  +
-              </button>
+              <a class="addbtn">
+                  <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="row bkg-bk" > 
@@ -511,146 +496,134 @@ max-width: 350px;
                 <img class="img-sm" src="img/squid.jpeg">
                 <div class="name">透抽</div>
                 <div class="price">NT 400</div>
-                <button class="shopcarAdd">
-                    +
-                </button>
+                <a class="addbtn">
+                    <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+                  </a>
                 
               
             </div>
-            <div class="col-three-one">
-              <div class="text-center">
-                <span class="fa fa-heart-o fa-5x"></span>
-              </div>
-              <h3 class="text-center">
-                類別
-              </h3>
-              <img class="img-sm" src="img/squid.jpeg">
-              <div class="name">透抽</div>
-                <div class="price">NT 100</div>
-              <button class="shopcarAdd fa fa-plus"></button>
+          <div class="col-three-one">
+            <div class="text-center">
+              <span class="fa fa-heart-o fa-5x"></span>
+            </div>
+            <h3 class="text-center">
+              類別
+            </h3>
+            <img class="img-sm" src="img/squid.jpeg">
+            <div class="name">透抽</div>
+              <div class="price">NT 100</div>
+              <a class="addbtn">
+                <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+              </a>
+            <div class="mask"></div>
+      <!-- 預計改成button -->
+          </div>
+          <div class="col-three-one">
+            <div class="text-center">
+              <span class="fa fa-gift fa-5x"></span>
+            </div>
+            <h3 class="text-center">
+            蝦蟹類
+            </h3>
+            <img class="img-sm" src="img/squid.jpeg">
+            <div class="name">透抽</div>
+            <div class="price">NT 300</div>
+            <a class="addbtn">
+              <i class="fa fa-plus-circle fa-3x" href="javascript:void(0);" onclick="addbtn()" aria-hidden="true"></i>
+            </a>
+            </div>
+        <div id="shoppingWrap">
         
-              </button>
-              <div class="mask"></div>
-        <!-- 預計改成button -->
-    
-      
-          
-            </div>
-            <div class="col-three-one">
-              <div class="text-center">
-                <span class="fa fa-gift fa-5x"></span>
-              </div>
-              <h3 class="text-center">
-              蝦蟹類
-              </h3>
-              <img class="img-sm" src="img/squid.jpeg">
-              <div class="name">透抽</div>
-              <div class="price">NT 300</div>
-              <button class="shopcarAdd">
-                  +
-              </button>
-            </div>
-            <div id="shoppingWrap">
-                <nav class="shopCircuit">
-                  <ol>
-                    <li><img src="img/logo.jpeg" class="img-sm" title="選擇付款方式"></li>
-                    <li><img src="img/logo.jpeg" class="img-sm"title="填寫訂購資料"></li>
-                    <li><img src="img/logo.jpeg" class="img-sm"title="完成訂購"></li>
-                  </ol>
-                </nav>
-            
-                    <form name="CartForm" id="CartForm" method="post">
-                        <section class="shopCartList">
-                          
-                          <table class="shoppTab">
-                            <tbody>
-                              <tr>
-                                  <th class="w90">商品圖片</th>
-                                  <th>商品名稱</th>
-                                  <th class="w80">規格</th>
-                                  <th class="w60">數量</th>
-                                  <th class="w60">單價</th>
-                                  <th class="w60">小計</th>
-                                  <th class="w80">刪除</th>
-                                </tr>
-                            </tbody>
-                          
-                              <tr>		
-                                <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="gallery img-sm"></a></td>		
-                                <td valign="middle"><a href="img/logo.jpeg" class="img-sm"> 商品名稱1</a>
-                                  <br><span class="cart-sale">【任選3項9折】		</span></td>		
-                                  <td valign="middle">黑 / L</td>		<td>			
-                                    <select name="qty[]" onchange="">
-                                      <option value="1" selected="">1</option><option value="2">2</option>
-                                      <option value="3">3</option><option value="4">4</option><option value="5">5</option>
-                                      <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                                      <option value="10">10</option>
-                                    </select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>
-                                        <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                        </a></td>	</tr>	
+                <form name="CartForm" id="CartForm" method="post">
+                    <section class="shopCartList">
+                      
+                      <table class="shoppTab">
+                        <tbody>
+                          <tr>
+                              <th class="w90">商品圖片</th>
+                              <th>商品名稱</th>
+                              <th class="w80">規格</th>
+                              <th class="w60">數量</th>
+                              <th class="w60">單價</th>
+                              <th class="w60">小計</th>
+                              <th class="w80">刪除</th>
+                            </tr>
+                        </tbody>
+                      
+                          <tr>		
+                            <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="gallery img-sm"></a></td>		
+                            <td valign="middle"><a href="img/logo.jpeg" class="img-sm"> 商品名稱1</a>
+                              <br><span class="cart-sale">【任選3項9折】		</span></td>		
+                              <td valign="middle">黑 / L</td>		<td>			
+                                <select name="qty[]" onchange="">
+                                  <option value="1" selected="">1</option><option value="2">2</option>
+                                  <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                                  <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>		</td>		<td>699</td>		<td><span class="subtotal">699</span></td>
+                                    <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </a></td>	</tr>	
 
-                                          
-                                  <tr>		
-                                  <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="galleryImg img-sm"></a></td>		
-                                  <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			
-                                    <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a>
-                                  </td>	
-                                    <td></td>	
-                                    <td></td>	
-                                    <td>1111</td>	
-                                    <td>222</td>	
-                                  <td></td>
-                              </tr>	
-                                    
-                              
-                            <script>
-                              var aShowGiftInfo = [];
-                            </script>
-                            <tr>
-                              <td colspan="5" > 商品金額總計</td>
+                                      
+                              <tr>		
+                              <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="galleryImg img-sm"></a></td>		
+                              <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【任選兩件9折 四件8折 六件7折 八件6折】		</span></td>		<td valign="middle">藍 / L</td>		<td>			
+                                <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td><a href="javascript:void(0)" onclick="del_item('4589','16057')"><img src="https://www.seoulmate.com.tw//images/del_icon.gif"></a></td>	</tr><tr>	<td><span class="tag_v1">滿件折扣</span></td>	<td><a class="Red" href="sale_activity.php?id=74">任選兩件9折 四件8折 六件7折 八件6折</a>
+                              </td>	
+                                <td></td>	
+                                <td></td>	
+                                <td>1111</td>	
+                                <td>222</td>	
                               <td></td>
-                              <td>NT$ <span class="prodtotal">prodtotal</span></td>
-                            </tr>
-                            <tr>
-                              <td colspan="5" 折扣小計></td>
-                              <td></td>
-                              <td>NT$ <span class="discount_amount">-210</span></td>
-                            </tr>
-                            
-                            <tr>
-                              <td colspan="5" >  運費小計</td>
-                              <td></td>
-                              <td><span class="shipfee">0</span></td>
-                            </tr>
-                            <tr class="bono">
-                              <td colspan="5" class="bono f15 Red">應付金額總計</td>
-                              <td class="bono"></td>
-                              <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              </section>
-                              <section class="footer">
-                                  
-                                    <div class="page_show"></div>               
-                                  <slides class="sld" >
-                                  </slides>
-                              </section>
+                          </tr>	
+                                
+                          
+                        <script>
+                          var aShowGiftInfo = [];
+                        </script>
+                        <tr>
+                          <td colspan="5" > 商品金額總計</td>
+                          <td></td>
+                          <td>NT$ <span class="prodtotal">prodtotal</span></td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" 折扣小計></td>
+                          <td></td>
+                          <td>NT$ <span class="discount_amount">-210</span></td>
+                        </tr>
                         
-                        <section class="cart_list step_pay_select_list" style="display: block;">
-                          <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
-                          <ul class="pay_select" id="PaymentSel">
-                            <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
-                          <input type="hidden" name="IC" id="IC" value="">
-                          <input type="hidden" name="payment" id="payment" value="">
-                          <input type="hidden" name="shipfee" id="shipfee" value="0">
-                          <input type="hidden" name="shipfree" id="shipfree" value="1">
-                        </section>
-                        </form>
-               
-              
-            </div>
+                        <tr>
+                          <td colspan="5" >  運費小計</td>
+                          <td></td>
+                          <td><span class="shipfee">0</span></td>
+                        </tr>
+                        <tr class="bono">
+                          <td colspan="5" class="bono f15 Red">應付金額總計</td>
+                          <td class="bono"></td>
+                          <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                          </section>
+                          <section class="footer">
+                              
+                                <div class="page_show"></div>               
+                              <slides class="sld" >
+                              </slides>
+                          </section>
+                    
+                    <section class="cart_list step_pay_select_list" style="display: block;">
+                      <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
+                      <ul class="pay_select" id="PaymentSel">
+                        <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
+                      <input type="hidden" name="IC" id="IC" value="">
+                      <input type="hidden" name="payment" id="payment" value="">
+                      <input type="hidden" name="shipfee" id="shipfee" value="0">
+                      <input type="hidden" name="shipfree" id="shipfree" value="1">
+                    </section>
+                    </form>            
+        </div>
         </div>
         <form id="sentToServer">
             <input type="text" name="data"/>
@@ -664,8 +637,7 @@ max-width: 350px;
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
             <li><a href="#">&raquo;</a></li>
-        </ul>
-        
+        </ul>       
       </div>
     </div>
   </section>
@@ -682,6 +654,7 @@ max-width: 350px;
 <!-- form test -->
   <!-- <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(203, 223, 240)"> -->
 <section id="shrimp" class="p-y-3 section-rotate box-shadow" style="background:rgb(227, 241, 245)">  
+    <!-- rgb(227, 241, 245) -->
   <div class="section-rotate-fixed">
     <div class="container">
       <h2 class="text-center ">瀾魚</h2>
@@ -705,16 +678,12 @@ max-width: 350px;
   <script type="text/javascript">
   $(document).ready(function(){
 
-    var s11;
-   s11 = function(){
-  $(".s1").click(function(){
-          $(".s1").css("color","yellow");
+  addbtn = function(){
+  $(".addbtn").click(function(){
+          $(".addbtn").css("color","orange");
           console.log("^^")
-    
       });
-
 }
-   
 
     //輸出頁碼
 	function setPage(pageCount){
@@ -858,7 +827,6 @@ max-width: 350px;
       // bg scroll 
   $('#shrimp').css('background-position-y', -(scrollPos / 2) + 'px')
   $('#header-ele').css('transform', 'translateY( ' + (scrollPos / 2) + 'px )')
-  
   });
 });
   </script>
