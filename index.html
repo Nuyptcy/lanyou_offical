@@ -286,15 +286,7 @@ max-width: 350px;
   </style>
 </head>
 <body> 
-  <ul class="pagination">
-	<li><a href="#">&laquo;</a></li>
-	<li class="active"><a href="#">1</a></li>
-	<li class="disabled"><a href="#">2</a></li>
-	<li><a href="#">3</a></li>
-	<li><a href="#">4</a></li>
-	<li><a href="#">5</a></li>
-	<li><a href="#">&raquo;</a></li>
-</ul>
+
 <div class="wrap">
   <nav class="navbar navbar-default ">
     <div class="container">
@@ -534,104 +526,121 @@ max-width: 350px;
             </div>
         <div id="shoppingWrap">
         
-                <form name="CartForm" id="CartForm" method="post">
-                    <section class="shopCartList">
-                      
-                      <table class="shoppTab">
-                        <tbody>
-                          <tr>
-                              <th class="w90">商品圖片</th>
-                              <th>商品名稱</th>
-                              <th class="w60">數量</th>
-                              <th class="w60">單價</th>
-                              <th class="w60">小計</th>
-                              <th class="w80">刪除</th>
-                            </tr>
-                        </tbody>
-                      
-                          <tr>		
-                            <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="gallery img-sm"></a></td>		
-                            <td valign="middle"><a href="img/logo.jpeg" class="img-sm"> 商品名稱1</a>
-                              <br><span class="cart-sale">【滿千送贈品】		</span>
-                            </td>		
-                         
-                            <td>			
-                              <select name="qty[]" onchange="">
-                                <option value="1" selected="">1</option><option value="2">2</option>
-                                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
-                                <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                                <option value="10">10</option>
-                              </select>	
-                            </td>		
-                            <td>699</td>		
-                            <td><span class="subtotal">699</span></td>
-                            <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
-                                <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
-                            </a></td>	
-                          </tr>	
+          <form name="CartForm" id="CartForm" method="post">
+          <section class="shopCartList">
+            <table class="shoppTab">
+              <tbody>
+          
+                <tr>
+                  <th class="w90">商品圖片</th>
+                  <th>商品名稱</th>
+                  <!-- <th class="w80">規格</th> -->
+                  <th class="w60">數量</th>
+                  <th class="w60">單價</th>
+                  <th class="w60">小計</th>
+                  <th class="w80">刪除</th>
+                </tr>
+              </tbody>
+                <tr>		
+                  <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="gallery img-sm"></a></td>		
+                  <td valign="middle"><a href="img/logo.jpeg" class="img-sm"> 商品名稱1</a>
+                  <br><span class="cart-sale">【滿千送贈品】		</span></td>		
+                  <!-- <td valign="middle">黑 </td>		
+                  <td>			 -->
+                    <select name="qty[]" onchange="">
+                      <option value="1" selected="">1</option><option value="2">2</option>
+                      <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                      <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>	
+                  </td>		
+                    <td>699</td>		
+                    <td><span class="subtotal">699</span></td>
+                    <td><a href="javascript:void(0)" onclick="del_item('4589','16057')">
+                        <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                    </a></td>	
+                </tr>	                       
+                <tr>		
+                  <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="galleryImg img-sm"></a></td>		
+                  <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【滿千送贈品】		</span></td>		
+                  <!-- <td valign="middle">藍 </td>		 -->
+                  <td>			
+                    <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td>
+                      <a href="javascript:void(0)" onclick="del_item('4589','16057')">
+                          <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>	<td><span class="tag_v1">滿千送贈品</span></td>	
+                    <td><a class="Red" href="sale_activity.php?id=74"></a>
+                  </td>	
+                  <!-- <td></td>	 -->
+                  <td></td>	
+                  <td>1111</td>	
+                  <td>222</td>	
+                  <td></td>
+                </tr>	 
+                <script>
+                  var aShowGiftInfo = [];
+                </script>
+                <tr>
+                  <td > 商品金額總計</td>
+                  <td></td>
+                  <!-- <td>NT$ <span class="prodtotal">prodtotal</span></td> -->
+                  <td>NT$ <span class="prodtotal">prodtotal</span></td>
+                  <td>ccc</td>
+                  <td>ddd</td>
+                  <td>eeee</td>
 
-                                      
-                              <tr>		
-                              <td><a class="thumbnailImg"><img src="img/logo.jpeg" class="galleryImg img-sm"></a></td>		
-                              <td valign="middle"><a href=""> 商品名稱2</a><br><span class="cart-sale">【滿千送贈品】		</span></td>				<td>			
-                                <select name="qty[]" onchange=""><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>			</select>		</td>		<td>699</td>		<td><span class="subtotal">1398</span></td>		<td>
-                                  <a href="javascript:void(0)" onclick="del_item('4589','16057')">
-                                      <i class="fa fa-trash fa-2x" aria-hidden="true"></i></a></td>
-                                </tr><tr>	<td><span class="tag_v1">滿千送贈品</span></td>	
-                                  <td><a class="Red" href="sale_activity.php?id=74"></a>
-                              </td>	
-                                <td></td>	
-                                <td></td>	
-                                <td>1111</td>	
-                                <td>222</td>	
-                              <td></td>
-                          </tr>	
-                                
-                          
-                        <script>
-                          var aShowGiftInfo = [];
-                        </script>
-                        <tr>
-                          <td colspan="5" > 商品金額總計</td>
-                          <td></td>
-                          <td>NT$ <span class="prodtotal">prodtotal</span></td>
-                        </tr>
-                        <tr>
-                          <td colspan="5" 折扣小計></td>
-                          <td></td>
-                          <td>NT$ <span class="discount_amount">-210</span></td>
-                        </tr>
-                        
-                        <tr>
-                          <td colspan="5" >  運費小計</td>
-                          <td></td>
-                          <td><span class="shipfee">0</span></td>
-                        </tr>
-                        <tr class="bono">
-                          <td colspan="5" class="bono f15 Red">應付金額總計</td>
-                          <td class="bono"></td>
-                          <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                          </section>
-                          <section class="footer">
-                              
-                                <div class="page_show"></div>               
-                              <slides class="sld" >
-                              </slides>
-                          </section>
-                    
-                    <section class="cart_list step_pay_select_list" style="display: block;">
-                      <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
-                      <ul class="pay_select" id="PaymentSel">
-                        <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
-                      <input type="hidden" name="IC" id="IC" value="">
-                      <input type="hidden" name="payment" id="payment" value="">
-                      <input type="hidden" name="shipfee" id="shipfee" value="0">
-                      <input type="hidden" name="shipfree" id="shipfree" value="1">
+                </tr>
+                <tr>
+                  <td  折扣小計></td>
+                  <td></td>
+                  <!-- <td>NT$ <span class="discount_amount">-210</span></td> -->
+                  <td>NT$ <span class="discount_amount">-210</span></td>
+                  <td>kqk</td>
+                  <td>qqqq</td>
+                  <td>qa</td>
+         
+                </tr>               
+                <tr>
+                  <td >  運費小計</td>
+                  <td></td>
+                  <!-- <td><span class="shipfee">0</span></td> -->
+                  <td><span class="shipfee">ss</span></td>
+                  <td><span class="shipfee">xx</span></td>
+                  <td><span class="shipfee">yy</span></td>
+                  <td><span class="shipfee">zz</span></td>
+
+                </tr>
+                <tr class="bono">
+                  <td class="bono f15 Red">應付金額總計</td>
+                  <td class="bono"></td>
+                  <!-- <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td> -->
+                  <td class="bono f15 Red">NT$ <span class="cart_total">1887</span></td>
+                  <td>ttttt</td>
+                  <td>ddd</td>
+                  <td>aaaaa</td>
+                
+                </tr>
+              </tbody>
+            </table>
                     </section>
-                    </form>            
+                    <section class="footer">
+                        
+                          <div class="page_show"></div>               
+                        <slides class="sld" >
+                        </slides>
+                    </section>
+              
+              <section class="cart_list step_pay_select_list" style="display: block;">
+                <h3 class="Tit"><i class="fa fa-check-square-o fa-1"></i>  選擇付款方式</h3>
+                <ul class="pay_select" id="PaymentSel">
+                  <li data-code="credit_card" data-default="" data-limit="0" style="display: inline-block;">信用卡刷卡</li><li data-code="virtual_atm" data-default="" data-limit="0" style="display: inline-block;">虛擬帳戶ATM</li>			</ul>
+                <input type="hidden" name="IC" id="IC" value="">
+                <input type="hidden" name="payment" id="payment" value="">
+                <input type="hidden" name="shipfee" id="shipfee" value="0">
+                <input type="hidden" name="shipfree" id="shipfree" value="1">
+              </section>
+          </form>            
         </div>
         </div>
         <form id="sentToServer">
